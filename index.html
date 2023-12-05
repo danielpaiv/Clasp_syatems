@@ -6,22 +6,94 @@
     <title>Document</title>
     <style>
         .box{
-            background-color: rgb(103, 240, 103);
+            
             height: 60px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 30px;
+
         }
+
         body{
-            background-color: rgb(11, 11, 85);
+            background-color: blue;
             color: white;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif
         }
+        .container{
+
+            padding: 15px;
+            }
+
+        legend{
+            color: rgb(253, 255, 255);
+            }
+
+        @media screen and (max-width: 768px) {
+            body{
+                background-color: green;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            body{
+                background-color: red;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            body{
+                width: 98%;
+            }       
+        }
+        @media screen and (max-width: 600px) {
+            body,div,center{
+                width: 98%;
+                font-size: 20px;
+            }     
+        }
+
+        @media screen and (max-width: 600px) {
+            body,div,img{
+                width: 98%;
+                font-size: 20px;
+                padding: 0px;
+
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            body,div,img{
+                width: 98%;
+                font-size: 20px;
+                text-align: center;
+            }     
+        }
+
+        @media screen and (max-width: 768px) {
+            body,div,legend{
+                width: 98%;
+                font-size: 20px;
+                text-align: center;
+            }     
+        }
+
+        @media screen and (max-width: 600px) {
+            
+        }
+
+        
+       
+        
+       
+
+
+
+
+
     </style>
 
     <h1></h1>
 </head>
 <body>
-    <div class="box">
+    <div>
         
            <center>
             <H2>Bem vindo ao nosso site</H2>
@@ -34,17 +106,18 @@
     </center>
     <h1>Tudo que seu negocio pracisa para proatividade</h1>
     <br>
+    <br>
 
+    <div class="box">
+        <legend>Começe tudo por um  formulário personalizado!</legend>
+        <img src="formulario.png"width="250px" height="" >
 
-    <h2>Começe tudo por um  formulário personalizado!</h2>
-    <img src="formulario.jpg"width="450px" height="" >
+        <legend>Tenha um  banco de dados para armazenar todos servisos e vendas</legend>
+        <img src="banco.jpg"width="500px" height="320" >    
 
-    <h2>Tenha um  banco de dados para armazenar todos servisos e vendas</h2>
-    <img src="banco.jpg"width="500px" height="320" >    
-
-    <h2>Aconpanhe seus resultados diarios por uma planilha dinamica</h2>
-    <img src="planilha.jpg"width="500px" height="320" >    
-
+        <legend>Aconpanhe seus resultados diarios por uma planilha dinamica</legend>
+        <img src="planilha.jpg"width="500px" height="320" >    
+    </div>
 
     
 </body>
