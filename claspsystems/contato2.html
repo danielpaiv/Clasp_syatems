@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato 2</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            background-color: rgb(21, 4, 98  );
+            padding: 10px;
+        }
+        .btn-abrir{
+            color: white;
+            font-size: 20px;
+        }
+        nav{
+            height: 0%;
+            width: 250px;
+            background-color: rgb(21, 4, 98  ) ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            transition: width 0.3s;
+        }
+        nav a{
+            color: white;
+            font-size: 25px;
+            display: block;
+            padding: 12px 10px 12px 32px;
+        }
+        nav a:hover{
+            color: rgb(21, 4, 98  );
+            background-color: white;
+        }
+        main{
+            padding: 10px;
+            transition: margin-left 0.5s;
+            text-align: center;
+            
+            
+            padding: 5px;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse:collapse ;
+        }
+        th,td{
+            padding: 5px 10px;
+        }
+        th{
+            background-color: rgb(21, 4, 98);
+            color: white;
+        }
+        /*odd aplicado em todos elementos inpares*/
+        table tr:nth-child(odd){
+            background-color: #ddd;
+
+        }
+        /*odd aplicado em todos elementos pares*/
+        table tr:nth-child(even){
+            background-color:white ;
+
+        }
+        div{
+            display: inline-block;
+            background-color: #060642 ;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+        
+        }    
+
+        .box{
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+        legend{
+            color: white;
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <!--criei uma class para usar no css e não ter conflito com outros links-->
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+
+    </header>
+   
+    <nav id="menu">
+        <a href="#" onclick="facharMenu()">&times; Fechar</a>
+        <a href="menu.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato2.html">Contato</a>
+        <a href="formulario.html">Mais opções</a>
+    </nav>
+    <main id="conteudo">
+       
+       
+        <div class="box">
+
+                    <h1>Telefone</h1>
+                    <h2>(81)9 9361-9196
+                        <a href="#">
+                        <button>
+                        <img src="./img/whatsap.jpg" width="30px">
+                        </button>
+                        </a>
+
+                    <h1>Email</h1>
+                    <h2>claspsystems@gmail.com
+                        <a href="#">
+                       <button> 
+                        <img src="./img/email.png" width="35px" >
+                        </button>
+                        </a>
+
+                    <h1>Instagran</h1>
+                    <h2>@claspsystems
+                        <a href="https://www.instagram.com/claspsystems?igsh=amg1bjNlZjQ3aG02">
+                        <button> 
+                        <img src="./img/instagram.jpg" width="35px" >
+                        </button>
+                        </a>
+
+            </div>
+    </main>
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style. height = '100%';
+            document.getElementById('conteudo').style.marginLeft = '20%';
+        }
+        function facharMenu(){
+            document.getElementById('menu').style. height = '0%'
+            document.getElementById('conteudo').style.marginLeft = '0%';
+        }
+        
+    </script>
+</body>
+</html>
