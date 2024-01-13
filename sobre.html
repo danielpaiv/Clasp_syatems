@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+    color: white;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+    border: 5px solid rgb(33, 173, 20);
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    color: rgb(31, 160, 42);
+}
+
+footer img{
+    width: 40px;
+    height: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    padding: 7px 60px;
+}
+
+nav a:hover{
+    color: green;
+}
+
+.container{
+    padding: opx 100px;
+}
+h3{
+    color:#0049DE ;
+}
+h2{
+    color: #0049DE;
+}
+
+/*codigo css do menu*/
+
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            background-color: rgb(21, 4, 98  );
+            padding: 10px;
+        }
+        .btn-abrir{
+            color: white;
+            font-size: 20px;
+        }
+        nav{
+            height: 0%;
+            width: 250px;
+            background-color: rgb(21, 4, 98  ) ;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            transition: width 0.3s;
+        }
+        nav a{
+            color: white;
+            font-size: 25px;
+            display: block;
+            padding: 12px 10px 12px 32px;
+        }
+        nav a:hover{
+            color: rgb(21, 4, 98  );
+            background-color: white;
+        }
+        main{
+            padding: 10px;
+            transition: margin-left 0.5s;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse:collapse ;
+        }
+        th,td{
+            padding: 5px 10px;
+        }
+        th{
+            background-color: rgb(21, 4, 98);
+            color: white;
+        }
+        /*odd aplicado em todos elementos inpares*/
+        table tr:nth-child(odd){
+            background-color: #ddd;
+
+        }
+        /*odd aplicado em todos elementos pares*/
+        table tr:nth-child(even){
+            background-color:white ;
+
+        }
+        div{
+            display: inline-block;
+            background-color: #060642 ;
+            padding: 5px;
+            text-align: center;
+        }
+        legend{
+            color: #060642;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <!--criei uma class para usar no css e não ter conflito com outros links-->
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+
+    </header>
+   
+    <nav id="menu">
+        <a href="#" onclick="facharMenu()">&times; Fechar</a>
+        <a href="menu.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato2.html">Contato</a>
+        <a href="formulario.html">Mais opções</a>
+    </nav>
+    <main id="conteudo">
+    <div class="container"> 
+        <nav>
+            <ul>
+                <li>
+                    <a href="menu.html">Voltar</a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <div class="center">
+                <img src="./img/logo.jpg"></div>
+            </div>
+                <h1>Claspsystems</h1>
+                <h2>Serviço de sistema, programação e análise de dados.</h2>
+        </header>
+            <main>
+                <div class="container">
+                    <section>
+                        <h3>Sobre mim</h3>
+                        <p>
+                            Somos uma empresa de programação de sistemas seja qual for a área tanto de vendas ou serviços.
+                        </p>
+       
+                        <h3>Especialidades</h3>
+                        <p>
+                            Criamos sistemas do total zero e customizamos conforme a nessecidade do cliente,
+                            trabalhamos com um banco de dados de alta performa-se onde tudo vai fluir para 
+                            o tratamento de dados formando um dashboard com todos os relatórios de suas movimentações,
+                            assim tornando mais fácil a tomada de decisões.
+                        </p>
+       
+                        <h3>visão</h3>
+                        <p>
+                            Queremos nos tornar referêcia no mercado de programação e tecnologia.
+
+                        </p>
+       
+                       </section>
+                </div>
+                
+            </main>
+        <footer>
+            <a href="https://github.com/danielpaiv/projeto_daniel-2-" target="_blank" rel="noopener noopener"> 
+                <img src="./img/github.svg.webp"></img>
+                <p>github</p>
+            </a>
+        </footer>
+    </div>
+</main>
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style. height = '100%';
+            document.getElementById('conteudo').style.marginLeft = '20%';
+        }
+        function facharMenu(){
+            document.getElementById('menu').style. height = '0%'
+            document.getElementById('conteudo').style.marginLeft = '0%';
+        }
+        
+    </script>
+</body>
+</html>
