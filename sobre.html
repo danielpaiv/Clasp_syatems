@@ -3,74 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
+    <title>Menu lateral</title>
+     <style>
         body{
-    color: white;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-header img{
-    width: 150px;
-    height: 150px;
-    border-radius: 40%;
-    border: 5px solid rgb(33, 173, 20);
-}
-
-.center{
-    text-align: center;
-}
-
-h1{
-    color: rgb(31, 160, 42);
-}
-
-footer img{
-    width: 40px;
-    height: 20px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-}
-
-.container{
-    padding: 7px 60px;
-}
-
-nav a:hover{
-    color: green;
-}
-
-.container{
-    padding: opx 100px;
-}
-h3{
-    color:#0049DE ;
-}
-h2{
-    color: #0049DE;
-}
-
-/*codigo css do menu*/
-
-body{
             font-family: Arial, Helvetica, sans-serif;
             margin: 0px;
 
@@ -137,15 +72,24 @@ body{
             background-color: #060642 ;
             padding: 5px;
             text-align: center;
+            width: 100%;
         }
         legend{
-            color: #060642;
+            color: white;
         }
-    </style>
+        h3{
+            color: blue;
+        }
+        p{
+            color: white;
+        }
 
+    </style>
 </head>
 <body>
-    <header>
+   
+
+        <header>
         <!--criei uma class para usar no css e não ter conflito com outros links-->
         <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
 
@@ -158,62 +102,43 @@ body{
         <a href="contato2.html">Contato</a>
         <a href="formulario.html">Mais opções</a>
     </nav>
-    <main id="conteudo">
-    <div class="container"> 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Voltar</a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-        </nav>
-        <header>
-            <div class="center">
-                <img src="./img/logo.jpg"></div>
-            </div>
-                <h1>Claspsystems</h1>
-                <h2>Serviço de sistema, programação e análise de dados.</h2>
-        </header>
-            <main>
-                <div class="container">
-                    <section>
-                        <h3>Sobre mim</h3>
-                        <p>
-                            Somos uma empresa de programação de sistemas seja qual for a área tanto de vendas ou serviços.
-                        </p>
-       
-                        <h3>Especialidades</h3>
-                        <p>
-                            Criamos sistemas do total zero e customizamos conforme a nessecidade do cliente,
-                            trabalhamos com um banco de dados de alta performa-se onde tudo vai fluir para 
-                            o tratamento de dados formando um dashboard com todos os relatórios de suas movimentações,
-                            assim tornando mais fácil a tomada de decisões.
-                        </p>
-       
-                        <h3>visão</h3>
-                        <p>
-                            Queremos nos tornar referêcia no mercado de programação e tecnologia.
 
-                        </p>
+    <main id="conteudo">
+
+        <div class="center">
+            <img src="./img/logo.jpg"></div>
+        </div>
+
+        <h1>BEM VINDO!</h1>
+
+            <div>
+
+                <section>
+                    <h3>Sobre mim</h3>
+                    <p>
+                         Somos uma empresa de programação de sistemas seja qual for a área tanto de vendas ou serviços.
+                    </p>
        
-                       </section>
-                </div>
-                
-            </main>
-        <footer>
-            <a href="https://github.com/danielpaiv/projeto_daniel-2-" target="_blank" rel="noopener noopener"> 
-                <img src="./img/github.svg.webp"></img>
-                <p>github</p>
-            </a>
-        </footer>
-    </div>
-</main>
+                    <h3>Especialidades</h3>
+                    <p>
+                         Criamos sistemas do total zero e customizamos conforme a nessecidade do cliente,
+                         trabalhamos com um banco de dados de alta performa-se onde tudo vai fluir para 
+                         o tratamento de dados formando um dashboard com todos os relatórios de suas movimentações,
+                          assim tornando mais fácil a tomada de decisões.
+                    </p>
+       
+                    <h3>visão</h3>
+                    <p>
+                        Queremos nos tornar referêcia no mercado de programação e tecnologia.
+
+                     </p>
+       
+                </section>
+
+             </div>
+
+    </main>
+    
     <script>
         function abrirMenu() {
             document.getElementById('menu').style. height = '100%';
@@ -225,5 +150,6 @@ body{
         }
         
     </script>
+
 </body>
 </html>
